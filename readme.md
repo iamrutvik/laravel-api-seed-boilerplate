@@ -1,4 +1,4 @@
-## Laravel API Boilerplate (JWT Edition)
+## Laravel API Boilerplate
 
 Laravel API Boilerplate is a ready-to-use "starting pack" that you can use to build your first API in seconds. As you can easily imagine, it is built on top of the awesome Laravel Framework.
 
