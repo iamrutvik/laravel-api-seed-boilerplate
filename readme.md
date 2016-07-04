@@ -21,6 +21,9 @@ With a similar foundation is really easy to get up and running in no time. I jus
 * _git clone_ the repository;
 * composer install;
 
+By default to make the installtion process smooth, I have removed storage/ and bootstrap/cache/ folder from .gitignore file.
+Later You might want to modify your .gitignore file to add them.
+
 Done!
 
 ## Main Features
