@@ -85,3 +85,11 @@ I currently removed the _VerifyCsrfToken_ middleware from the _$middleware_ arra
 ## Feedback
 
 I currently made this project for personal purposes. I decided to share it here to help anyone with the same needs. If you have any feedback to improve it, feel free to make a suggestion, or open a PR!
+
+## Contribution
+
+I am planning to improve Responses and want to implement standards from <a href="http://jsonapi.org/" target="_blank">json api</a>. Those who are willing to contribute, can open a PR.
+
+## Roadmap
+
+* Implement JSON API Standards from <a href="http://jsonapi.org/" target="_blank">json api</a>
