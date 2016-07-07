@@ -61,7 +61,7 @@ To overcome this issue, You can use newly created token for each request. You ca
 When you use recovery() route, it will use default Laravel Password Facade to send email reset link, which in order to send mail uses a template from /resources/views/auth/emails/password.php.
 
 To make the directory structure more API development friendly, I have modified the structure to /resources/views/emails/auth/password.php. Thus you can manage all modules' mails in emails directory, module wise.
-Though you can configure and change the view path in config/auth.php by setting "email" key. The view file only utilized $token which will be used to reset password using reset() route. Check /resources/views/emails/auth/password.php file for more details.
+Though you can configure and change the view path in config/auth.php by setting "email" key. The view file only utilize $token which will be used to reset password using reset() route. Check /resources/views/emails/auth/password.php file for more details.
 
 ### Secrets Generation
 
