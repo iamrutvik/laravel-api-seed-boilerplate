@@ -19,7 +19,14 @@ $api->version('v1', function ($api) {
 		return \App\User::all();
 	});*/
 
-	/*$api->group(['middleware' => ['api.auth'], function ($api) {
+
+	/*
+	 * You can utilize 'jwt.refresh' middleware when you want to use new token for each request.
+	 * So when you send one request you will get another newly generated token in authentication header with response.
+	 * All previous token will be get invalidated.
+	 *
+	 * */
+	/*$api->group(['middleware' => ['api.auth', 'jwt.refresh'], function ($api) {
 		// Endpoints registered here will have the "foo" middleware applied.
 	}]);*/
 
