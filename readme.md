@@ -46,6 +46,10 @@ You will need:
 * _recovery_: just the user email address;
 * _reset_: token, email, password and password confirmation;
 
+### A Separate File for Routes
+
+You can specify your routes in the `api_routes.php` file, that will be automatically loaded. In this file you will find many examples of routes.
+
 ### Utilizing 'jwt.refresh' Middleware
 
 The problem with protected routes as specified in api_routes.php that if one user keeps using login route to generate new token, all previously generated tokens are also active and they can use them which is a breach of API security.
@@ -58,10 +62,6 @@ When you use recovery() route, it will use default Laravel Password Facade to se
 
 To make the directory structure more API development friendly, I have modified the structure to /resources/views/emails/auth/password.php. Thus you can manage all modules' mails in emails directory, module wise.
 Though you can configure and change the view path in config/auth.php by setting "email" key. The view file only utilized $token which will be used to reset password using reset() route. Check /resources/views/emails/auth/password.php file for more details.
-
-### A Separate File for Routes
-
-You can specify your routes in the `api_routes.php` file, that will be automatically loaded. In this file you will find many examples of routes.
 
 ### Secrets Generation
 
