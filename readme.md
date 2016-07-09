@@ -18,10 +18,12 @@ With a similar foundation is really easy to get up and running in no time. I jus
 
 ## Installation
 
-* _git clone_ the repository;
-* composer install;
-* Redirect to Laravel Installation directory and run 'php artisan migrate'. This will run the [Migration](https://laravel.com/docs/5.2/migrations) and will create tables for authentication module.
-* Run 'php artisan serve'. This will run Laravel default web server and you can access it using 'http://localhost:8000'.
+Run following commands in Command Prompt
+
+* Redirect to desired directory where you want to place your code and run _git clone https://github.com/iamrutvik/laravel-api-seed-boilerplate.git_. [Git for windows](https://git-scm.com/download/win) Required.
+* _composer install_
+* Redirect to Laravel Installation directory and run _php artisan migrate_. This will run the [Migration](https://laravel.com/docs/5.2/migrations) and will create tables for authentication module.
+* Run _php artisan serve_. This will run Laravel default web server and you can access it using 'http://localhost:8000'.
 
 ## Basic Usage
 
@@ -29,6 +31,9 @@ Run 'http://localhost:8000/api/auth/signup'
 
 Open a [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) or any utility that can send the HTTP request, and Call 'http://localhost:8000/api/auth/signup'. Specify name, email and password in Form data and send request.
 You will receive the Auth token in response which you can use to send other API request later.
+
+You can pass this authentication token in request parameter :
+_http://localhost/api/user/cards?token=YOUR_ACCESS_TOKEN_
 
 To Perform login, call http://localhost:8000/api/auth/login and specify email and password in Form data.
 
