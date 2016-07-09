@@ -20,8 +20,25 @@ With a similar foundation is really easy to get up and running in no time. I jus
 
 * _git clone_ the repository;
 * composer install;
+* Redirect to Laravel Installation directory and run 'php artisan migrate'. This will run the [Migration](https://laravel.com/docs/5.2/migrations) and will create tables for authentication module.
+* Run 'php artisan serve'. This will run Laravel default web server and you can access it using 'http://localhost:8000'.
 
-By default to make the installtion process smooth, I have removed storage/ and bootstrap/cache/ folder from .gitignore file.
+## Basic Usage
+
+Run 'http://localhost:8000/api/auth/signup'
+
+Open a [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) or any utility that can send the HTTP request, and Call 'http://localhost:8000/api/auth/signup'. Specify name, email and password in Form data and send request.
+You will receive the Auth token in response which you can use to send other API request later.
+
+To Perform login, call http://localhost:8000/api/auth/login and specify email and password in Form data.
+
+## How to start
+
+* Create a controller in app\Api\V1\Controllers and add your logic
+* Specify the Route in app\Http\api_routes.php file.
+* Use the specified Route in Postman
+
+By default to make the installation process smooth, I have removed storage/ and bootstrap/cache/ folder from .gitignore file.
 Later You might want to modify your .gitignore file to add them.
 
 Done!
