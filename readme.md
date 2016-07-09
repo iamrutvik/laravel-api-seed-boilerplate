@@ -20,8 +20,9 @@ With a similar foundation is really easy to get up and running in no time. I jus
 
 Run following commands in Command Prompt
 
-* Redirect to desired directory where you want to place your code and run '_git clone https://github.com/iamrutvik/laravel-api-seed-boilerplate.git_.' [Git for windows](https://git-scm.com/download/win) Required.
-* _composer install_
+* Redirect to desired directory where you want to place your code
+* Run '_git clone https://github.com/iamrutvik/laravel-api-seed-boilerplate.git_.' [Git for windows](https://git-scm.com/download/win) Required.
+* _composer install_. This will install all vendor dependencies and Laravel Framework.
 * Run '_php artisan migrate_'. This will run the [Migration](https://laravel.com/docs/5.2/migrations) and will create tables for authentication module.
 * Run '_php artisan serve_'. This will run Laravel default web server and you can access it using 'http://localhost:8000'.
 
