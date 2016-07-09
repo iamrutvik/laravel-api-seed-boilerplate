@@ -26,6 +26,9 @@ Run following commands in Command Prompt
 * Run '_php artisan migrate_'. This will run the [Migration](https://laravel.com/docs/5.2/migrations) and will create tables for authentication module.
 * Run '_php artisan serve_'. This will run Laravel default web server and you can access it using 'http://localhost:8000'.
 
+By default to make the installation process smooth, I have removed storage/ and bootstrap/cache/ folder from .gitignore file.
+Later You might want to modify your .gitignore file to add them.
+
 ## Basic Usage
 
 Run 'http://localhost:8000/api/auth/signup'
@@ -43,9 +46,6 @@ To Perform login, call http://localhost:8000/api/auth/login and specify email an
 * Create a controller in app\Api\V1\Controllers and add your logic
 * Specify the Route in app\Http\api_routes.php file.
 * Use the specified Route in Postman
-
-By default to make the installation process smooth, I have removed storage/ and bootstrap/cache/ folder from .gitignore file.
-Later You might want to modify your .gitignore file to add them.
 
 Done!
 
