@@ -50,9 +50,17 @@ class AuthController extends Controller
         $hasToReleaseToken = Config::get('boilerplate.signup_token_release');
 
         $userData = $request->only($signupFields);
-        //add verification code
+        
+        /**
+        * This code will add verification code features.
+        * If you want to use, modify migration file for users table and add column 'verification_code'
+        * And then remove comment from following code
+        */
+
+        /*
         $verification_code = str_random(6);
         $userData = array_add($userData, 'verification_code' , $verification_code);
+        */
 
         $validator = Validator::make($userData, Config::get('boilerplate.signup_fields_rules'));
 
@@ -68,9 +76,11 @@ class AuthController extends Controller
         * To send it using mail, please configure SMTP settings in env file.
         */
 
-        /*Mail::send(Config::get('emails.views.verification'), ['user' => $user], function ($message) use ($user){
+        /*
+        Mail::send(Config::get('emails.views.verification'), ['user' => $user], function ($message) use ($user){
             $message->to($user->email, $user->name)->subject(Config::get('emails.subjects.verification'));
-        });*/
+        });
+        */
 
         User::reguard();
 
