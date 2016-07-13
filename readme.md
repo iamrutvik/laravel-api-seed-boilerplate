@@ -129,3 +129,4 @@ I am planning to improve Responses and want to implement standards from <a href=
 ## Roadmap
 
 * Implement JSON API Standards from <a href="http://jsonapi.org/" target="_blank">json api</a>
+* Implement Swagger 2.0 with annotations. Though, This Package comes with in built support for [API Documentation](https://github.com/dingo/api/wiki/API-Blueprint-Documentation).
