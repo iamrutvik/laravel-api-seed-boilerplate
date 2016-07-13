@@ -63,9 +63,14 @@ class AuthController extends Controller
         User::unguard();
         $user = User::create($userData);
 
-        Mail::send(Config::get('emails.views.verification'), ['user' => $user], function ($message) use ($user){
+        /*
+        * This peice of code will send verification code via mail.
+        * To send it using mail, please configure SMTP settings in env file.
+        */
+
+        /*Mail::send(Config::get('emails.views.verification'), ['user' => $user], function ($message) use ($user){
             $message->to($user->email, $user->name)->subject(Config::get('emails.subjects.verification'));
-        });
+        });*/
 
         User::reguard();
 
