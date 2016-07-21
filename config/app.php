@@ -148,6 +148,14 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+
+        //array serializer
+        App\Providers\ArraySerializerServiceProvider::class,
+
+        //jsonapi serializer
+
+        //App\Providers\JSONApiServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
