@@ -1,6 +1,8 @@
 ## Laravel API Boilerplate
 
-Laravel API Boilerplate is a ready-to-use "starting pack" that you can use to build your first API in seconds. As you can easily imagine, it is built on top of the awesome Laravel Framework. A true and complete implementation of REST API using Laravel.
+Laravel API Boilerplate is a ready-to-use "starting pack" that you can use to build your first API in seconds. As you can easily imagine, it is built on top of the awesome Laravel Framework Version 5.2. A true and complete implementation of REST API using Laravel.
+
+If you are looking for API seed/boilerplate with Laravel 5.3, you can check my another repo at [Laravel 5.3 API Seed](https://github.com/iamrutvik/laravel-5.3-api-seed)
 
 It has in-built support for :
 
